@@ -1,30 +1,16 @@
-import Link from "next/link";
-import Image from "next/image";
 import { MainNav } from "@/components/main-nav";
+import HeroBanner from "@/components/landing/hero-banner";
+import FeaturedMovies from "@/components/landing/featured-movies";
 
 // RSC - React Server Component
 // SSR - Enabled by default
 export default function HomePage() {
   return (
-    <div className="main-h-screen flex flex-col relative">
+    <div className="flex flex-col main-h-screen">
       <MainNav />
-      <main className="flex flex-col justify-center items-center gap-4 flex-12 text-4xl py-16 min-h-screen bg-purple-300">
-        This is My Home Page
-        <Link 
-            href="/movies" 
-            className="text-white text-sm bg-black p-4 rounded-full"
-        >
-          Go to Movies Page
-        </Link>
-
-        <div>
-          <Image 
-            src="/assets/naming-conventions.png"
-            alt="Naming Conventions"
-            width={500}
-            height={300}
-            />
-        </div>
+      <main className="flex-1">
+        <HeroBanner />
+        <FeaturedMovies />
       </main>
     </div>
   );
