@@ -2,9 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 # CineScope Movie Dashboard
 
+user: uwantha2021_db_user
+pw: S9dQ6tbnwBkOwXaG
+
 ## App Theme
 
-primary Color:#1dd1a1 
+primary Color:#1dd1a1
 
 ## Getting Started
 
